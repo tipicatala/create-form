@@ -1,0 +1,76 @@
+.root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: gainsboro;
+  padding-top: 100px;
+}
+
+.form {
+  width: 500px;
+}
+
+.tabs {
+  display: flex;
+
+  &_item {
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 4px;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 300ms color ease-in-out, 300ms background-color ease-in-out;
+
+    &-active {
+      background-color: white;
+      color: darkcyan;
+    }
+  }
+}
+
+.body {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.textArea {
+  resize: none;
+  outline: 1px solid darkcyan;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 24px;
+  color: rgb(212, 54, 80);
+  height: 500px;
+
+  &:focus {
+    border: 0px;
+    outline: rgb(212, 54, 80) solid 1px;
+  }
+}
+
+.button {
+  border: unset;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: darkcyan;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  width: fit-content;
+  cursor: pointer;
+  transition: 300ms ease-in-out color, 300ms ease-in-out background-color;
+
+  &:hover {
+    background-color: rgb(212, 54, 80);
+  }
+}
