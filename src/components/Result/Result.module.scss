@@ -1,6 +1,32 @@
+@import '../../styles/mixins.scss';
+
 .inputs {
   &_item {
     margin-bottom: 16px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: rgb(212, 54, 80);
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.extraInfo {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gainsboro;
+}
+
+.buttons {
+  display: flex;
+
+  &_item {
+    @include button;
+    margin-right: 8px;
   }
 }
 

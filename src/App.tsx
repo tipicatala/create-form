@@ -39,6 +39,7 @@ function App() {
                 className={s.button}
                 value='Apply'
                 type='submit'
+                onClick={() => setActiveTab('result')}
               />
             </>
           ) : config && <Result config={config}/>}

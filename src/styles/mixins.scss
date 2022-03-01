@@ -1,0 +1,16 @@
+@mixin button {
+  border: unset;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: darkcyan;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  width: fit-content;
+  cursor: pointer;
+  transition: 300ms ease-in-out color, 300ms ease-in-out background-color;
+
+  &:hover {
+    background-color: rgb(212, 54, 80);
+  }
+}

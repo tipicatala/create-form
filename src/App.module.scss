@@ -1,3 +1,5 @@
+@import './styles/mixins.scss';
+
 .root {
   display: flex;
   justify-content: center;
@@ -42,6 +44,10 @@
   padding: 16px;
 }
 
+.button {
+  @include button;
+}
+
 .textArea {
   resize: none;
   outline: 1px solid darkcyan;
@@ -55,22 +61,5 @@
   &:focus {
     border: 0px;
     outline: rgb(212, 54, 80) solid 1px;
-  }
-}
-
-.button {
-  border: unset;
-  border-radius: 8px;
-  padding: 4px;
-  background-color: darkcyan;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  width: fit-content;
-  cursor: pointer;
-  transition: 300ms ease-in-out color, 300ms ease-in-out background-color;
-
-  &:hover {
-    background-color: rgb(212, 54, 80);
   }
 }
